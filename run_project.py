@@ -87,7 +87,7 @@ class RunProjectCommand(sublime_plugin.WindowCommand):
     # build panel and go to that point in the code
     if sublime.platform() == 'osx':
       # for the system error messages
-      self.window.run_command('exec', {'cmd': cmd, "file_regex": "^[^/]*(/[^:]*):([0-9]+):([0-9]*)(.*)$" })
+      # self.window.run_command('exec', {'cmd': cmd, "file_regex": "^[^/]*(/[^:]*):([0-9]+):([0-9]*)(.*)$" })
       # for my generated error messages
       self.window.run_command('exec', { 'cmd': cmd,  
                                         "file_regex": "°(.*):.*:([0-9]+):", 
